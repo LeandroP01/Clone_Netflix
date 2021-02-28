@@ -1,0 +1,139 @@
+:root{
+    --vermelho: #E50914; /*DECLARAÇÃO  DA VARIAVEL*/
+    --preta:#141414; /*DECLARAÇÃO  DA VARIAVEL*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /** O limite de tudo que esta dentro da caixa, nãovai passar a borda da caixa*/
+
+}
+
+/*elementos base*/
+
+body{
+background: var(--preta);
+font-family: 'Arial',  Times, serif;
+color: white;
+}
+
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black',Times;
+    font-size: 40px;
+   
+}
+
+header nav  a{
+    text-decoration: none; /*remove a linha abaixo do link*/
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{ /*Quando o mouse estiver em cima, mudará de cor*/
+    color: #fff;
+    
+}
+
+/*Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100% ), url('/img/capa_theUmbrella.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px ; /*Lida com o espaço interno do elemento*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+  
+}
+
+.botao:hover{
+    background-color:white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 7px;
+}
+
+
+
+.container{
+    margin-left: 35px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+
+
+.categorias{
+    margin: 2px 10px;
+    font-size: 23px;
+    font-family: 'Serif';
+    padding: 10px;
+} 
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    
+}
+
+.item{
+    cursor: pointer;
+}
+
+.carousel-filmes{
+    margin-top: 5px;
+    
+    
+}
+
+
+
+
